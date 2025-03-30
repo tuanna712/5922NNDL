@@ -20,3 +20,6 @@ python -m spacy download en_core_web_sm
 In Tutorial 7, if you encounter an error with torchinfo while printing the model summary, add the device argument as shown below:
 
 summary(model, input_size=(1, 40, 58), device="cpu")
+
+# Start Jupyter
+jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root
