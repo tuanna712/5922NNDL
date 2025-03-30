@@ -1,0 +1,22 @@
+Solution:
+Below are my recommended environment settings, which I have tested for Coding Tutorials 7 to 11:
+
+Python 3.10.16
+Requirements.txt (attachment)
+
+Other notes:
+If you close the Shell Window tab, the Jupyter Lab will be immediately terminated.
+If you create a new Conda environment and don't see it in Jupyter Lab. Follow these steps to add the environment to Jupyter Lab's environment list:
+Install the ipykernel package.
+
+Run this command on terminal:
+
+python -m ipykernel install --user --name=<env_name> --display-name "<Name to display in Jupyter Lab>"
+
+Coding Tutorial 8, use the following command on terminal to download the SpaCy “en_core_web_sm” model, if it can't be loaded from notebook:
+
+python -m spacy download en_core_web_sm
+
+In Tutorial 7, if you encounter an error with torchinfo while printing the model summary, add the device argument as shown below:
+
+summary(model, input_size=(1, 40, 58), device="cpu")
