@@ -36,3 +36,5 @@ GPUtil==1.4.0
 bitsandBytes==0.45.4
 
 peft==0.14.0
+
+sentencepiece==0.2.0
